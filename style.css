@@ -1,0 +1,266 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+h1, h2, h3, p {
+    color: #8F8F8F;
+    font-family: 'Arial';
+    letter-spacing: -0.025rem;
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.75;
+    font-weight: 400;
+}
+
+#subtitle {
+	color: #B8B8B8;
+    font-size: 0.875em;
+    text-transform: none;
+    letter-spacing: 0;
+    width: auto;
+}
+
+.container {
+	margin-bottom: 3rem;
+}
+
+#bio{
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+    text-transform: none;
+	text-align: left;
+}
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+	font-size:18pt;
+}
+
+#wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    padding: 3rem 3rem 3rem 3rem;
+    box-sizing: :border-box;
+
+}
+
+.location {
+	display:block;
+	font-size: 15px;
+}
+
+#main {
+	
+	display: flex;
+    position: relative;
+    max-width: 100%;
+    z-index: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+    background-color: rgba(255,255,255,0.973);
+    box-shadow: 0rem 1.75rem 3.125rem 1.25rem rgba(0,0,0,0.059);
+    border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
+    transition: opacity 1.25s ease-in-out 0s;
+
+}
+
+.inner {
+    position: relative;
+    z-index: 1;
+    border-radius: inherit;
+    padding: 4rem 3rem;
+    max-width: 100%;
+    width: 32rem;
+}
+
+.full {
+
+	margin-left: calc(-3rem);
+    width: calc(100% + 6rem + 0.4725px);
+    max-width: calc(100% + 6rem + 0.4725px);
+}
+
+
+#header {
+	text-transform: uppercase;
+	font-family: 'Oswald';
+    letter-spacing: 0.575rem;
+    width: calc(100% + 0.775rem);
+    font-size: 3.25em;
+    line-height: 1.375;
+    font-weight: 700;
+    margin-bottom: 0.75rem
+}
+
+#image01 {
+	margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+img {
+	position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    display: block;
+}
+
+
+#image01 img {
+    width: 100vw;
+}
+
+.image.full img {
+    display: block;
+}
+
+.flex-container {
+	display:flex;
+	flex-wrap:wrap;
+    flex-direction:row;
+}
+
+
+.hour::before {
+	display: inline-block;
+	margin-left:4.2rem;
+	margin-right:1rem;
+    width: 24px;
+    height: 24px;
+    content: "";
+    background: url(images/hour.svg) no-repeat;
+}
+
+.pricing::before {
+	display: inline-block;
+	margin-left:0.5rem;
+	margin-right:1rem;
+    width: 22px;
+    height: 22px;
+    content: "";
+    background: url(images/pricing.svg) no-repeat;
+}
+
+.pricing, .hour {
+	margin-top:1rem;
+}
+
+.padding-top {
+	margin-top:1rem;
+}
+
+.half{
+	flex: content;
+}
+
+
+
+.contact{
+	width: 20rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    padding: 0 1.5625rem;
+    font-size: 1em;
+    font-family: 'Arial';
+    font-weight: 400;
+    border-radius: 0.25rem;
+    background-color: #2F9CEB;
+    color: #FFFFFF;
+    position: relative;
+    margin:2rem auto 0;
+    border:0;
+
+}
+
+.benefits {
+	margin-left:2rem;
+}
+
+
+ul {
+	color: #8F8F8F;
+    font-family: 'Arial';
+    letter-spacing: -0.025rem;
+    font-size: 0.9em;
+    line-height: 1.75;
+    font-weight: 400;
+	list-style-type: none;
+	text-align: left;
+}
+
+li {
+	margin-bottom:0.5rem;
+}
+li::before{
+	display: inline-block;
+	margin-left:0.7rem;
+	margin-right:1rem;
+    width: 18px;
+    height: 18px;
+    content: "";
+    background: url(images/tick.svg) no-repeat;
+    vertical-align: middle;
+
+}
+
+@media (max-width: 1280px){
+html {
+    font-size: 13pt;
+}
+}
+
+@media (max-width: 1680px){
+html {
+    font-size: 13pt;
+}
+}
+
+@media (max-width: 736px){
+html {
+    font-size: 11pt;
+}
+
+.contact {
+	width: 15rem;
+}
+
+.benefits {
+	margin-left:0;
+}
+}
+
+@media (max-width: 980px){
+html {
+    font-size: 11pt;
+}
+}
+
+@media (max-width: 480px){
+#wrapper {
+    padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+}
+#header {
+	font-size:2em;
+}
+
+
+}
+
+@media (max-width: 736px){
+#wrapper {
+    padding: 1.75rem 1.75rem 1.75rem 1.75rem;
+}}
