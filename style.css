@@ -257,6 +257,17 @@ html {
 	font-size:2em;
 }
 
+.pricing {
+	margin-right:1rem;
+}
+
+.hour::before {
+	margin-left:0.4rem;
+}
+
+.hour {
+margin-top:0;
+}
 
 }
 
